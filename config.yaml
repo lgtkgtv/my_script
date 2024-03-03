@@ -4,6 +4,7 @@
 file_patterns:
   - "*.txt"
   - "*.docx"
+  - "*"  
 # List of directory patterns to search in
 dir_patterns:
   - "./tests"
@@ -14,4 +15,4 @@ actions:
   - list_files
   - sanitize_filename
   - remove_files_with_zero_length
-# - remove_duplicates
+  - remove_duplicates
