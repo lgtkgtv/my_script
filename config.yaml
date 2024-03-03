@@ -8,6 +8,7 @@ file_patterns:
 # List of directory patterns to search in
 dir_patterns:
   - "./tests"
+  - "/etc" 
   - "/home/s/Downloads"
 
 # Actions to perform on matching files
@@ -15,4 +16,5 @@ actions:
   - list_files
   - sanitize_filename
   - remove_files_with_zero_length
+  - remove_duplicateshkhj  
   - remove_duplicates
