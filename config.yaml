@@ -1,12 +1,17 @@
 ## Example YAML configuration file for the file utility
 
 # List of filename patterns to search for
-file_patterns: "*.txt,*.docx"
+file_patterns:
+  - "*.txt"
+  - "*.docx"
 # List of directory patterns to search in
-dir_patterns: "/home/user/documents,/home/user/downloads"
+dir_patterns:
+  - "./tests"
+  - "/home/s/Downloads"
+
 # Actions to perform on matching files
 actions:
   - list_files
   - sanitize_filename
   - remove_files_with_zero_length
-#  - remove_duplicates
+# - remove_duplicates

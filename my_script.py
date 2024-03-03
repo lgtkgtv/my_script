@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 from read_arguments import read_arguments
 from input_validation import input_validation
