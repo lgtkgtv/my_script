@@ -22,6 +22,7 @@
 > Show me all the tests that run successfully and tests that failed
 > How can I run all the unit tests in a specific directory?
 
+
     python -m unittest discover -s directory
     python -m unittest discover -s tests -p '*_test.py'
     This will discover all *_test.py files in the tests directory and its subdirectories, and run them.
@@ -34,3 +35,4 @@ cd my_scripts
 python -m unittest tests.test_read_arguments.TestReadArguments
 python -m unittest tests.test_read_arguments.TestReadArguments.test_read_arguments
 python -m unittest tests.test_read_arguments.TestReadArguments.test_no_arguments
+
