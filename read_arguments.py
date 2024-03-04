@@ -44,7 +44,8 @@ Example usages:
         try:
             with open(args.config, 'r') as f:
                 config = yaml.safe_load(f)
-
+                if config is None:
+                    raise ValueError('Empty configuration file')
                 yamlcfg_file_patterns = config.get('file_patterns', ['*'])
                 yamlcfg_dir_patterns = config.get('dir_patterns', ['.'])
                 yamlcfg_actions = config.get('actions', ['list_files'])

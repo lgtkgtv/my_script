@@ -1,0 +1,11 @@
+file_patterns:
+  - "*.txt"
+  - "*"
+dir_patterns:
+  - "./tests"
+  - "/home/s/Downloads"
+actions:
+  - list_files
+  - sanitize_filename
+  - remove_files_with_zero_length
+  - remove_duplicates

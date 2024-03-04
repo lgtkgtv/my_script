@@ -1,0 +1,9 @@
+file_patterns:
+  - "*.txt"
+  - "*"
+dir_patterns:
+  - "./tests"
+  - "/home/s/Downloads"
+actions:
+  - list_files
+  - invalid_action

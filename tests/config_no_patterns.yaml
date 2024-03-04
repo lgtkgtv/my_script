@@ -1,0 +1,5 @@
+file_patterns: []
+dir_patterns: []
+actions:
+  - list_files
+  - sanitize_filename

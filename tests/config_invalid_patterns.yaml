@@ -1,0 +1,9 @@
+file_patterns:
+  - "*.txt"
+  - "/invalid/pattern"
+dir_patterns:
+  - "./tests"
+  - "/tmp*"
+actions:
+  - list_files
+  - sanitize_filename
